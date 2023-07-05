@@ -14,7 +14,7 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
-class SchemaDeserializer extends StdDeserializer<Schema> {
+public class SchemaDeserializer extends StdDeserializer<Schema> {
 
     private Map<String, Entity> entityNameMap = new HashMap<>();
     private Map<String, Relationship> relationshipNameMap = new HashMap<>();
