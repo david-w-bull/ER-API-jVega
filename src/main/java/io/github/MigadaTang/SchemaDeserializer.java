@@ -168,7 +168,9 @@ public class SchemaDeserializer extends StdDeserializer<Schema> {
                 if (portAtBelongObjNode != null) {
                     portAtBelongObj = portAtBelongObjNode.intValue();
                 }
-                edge.updatePorts(portAtRelationship, portAtBelongObj);
+                if(edge != null) {   // edited dwb 20230705
+                    edge.updatePorts(portAtRelationship, portAtBelongObj);
+                }
             }
 
             JsonNode attributeList = relationshipJSONNode.get("attributeList");
