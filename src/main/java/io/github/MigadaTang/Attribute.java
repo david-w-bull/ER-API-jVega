@@ -8,6 +8,7 @@ import io.github.MigadaTang.entity.AttributeDO;
 import io.github.MigadaTang.exception.ERException;
 import lombok.Getter;
 import org.apache.ibatis.exceptions.PersistenceException;
+import org.springframework.data.mongodb.core.mapping.Field;
 
 import java.util.Date;
 import java.util.List;
@@ -24,6 +25,7 @@ public class Attribute extends ERBaseObj {
     /**
      * The type of the object to which this attribute belongs
      */
+    @Field("Attribute_belongObjType")
     private BelongObjType belongObjType;
     /**
      * The type of data this attribute contains

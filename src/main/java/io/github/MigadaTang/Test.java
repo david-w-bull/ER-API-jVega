@@ -68,7 +68,14 @@ public class Test {
 //    Relationship CG = example.createRelationship("CG", C, G, Cardinality.ZeroToMany, Cardinality.ZeroToMany);
 //
 //    useGraphviz(example);
-    System.out.println("Test finished!");
+//    ER.initialize();
+//    Reverse reverse = new Reverse();
+//    Schema schema = reverse.relationSchemasToERModel(RDBMSType.POSTGRESQL, "localhost"
+//            , "5432", "jvegatest", "david", "dReD@pgs5b!");
+//
+//    String schemaString = schema.toJSON();
+//    System.out.println(schemaString);
+//    System.out.println("Test finished!");
   }
 
   public static void testSqlGeneration() throws ParseException {

@@ -3,6 +3,7 @@ package io.github.MigadaTang;
 import io.github.MigadaTang.common.BelongObjType;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import org.springframework.data.mongodb.core.mapping.Field;
 
 import java.util.Date;
 
@@ -15,6 +16,7 @@ public class ERBaseObj {
     private Long ID;
     private Long schemaID;
     private String name;
+    @Field("MyERBaseObj_belongObjType")
     private BelongObjType belongObjType;
     private LayoutInfo layoutInfo;
     private Date gmtCreate;
