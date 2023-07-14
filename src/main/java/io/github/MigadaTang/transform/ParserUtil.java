@@ -526,7 +526,6 @@ public class ParserUtil {
             List<Table> recursiveList = new ArrayList<>();
             for (Table table: tablesRelyOnNonStrongEntity) {
 
-                System.out.println(possibleWeakEntitySet.contains(table));
                 if (possibleWeakEntitySet.contains(table)) {
                     if (!tableDTOEntityMap.containsKey(table.getBelongStrongTableID())) {
                         recursiveList.add(table);
